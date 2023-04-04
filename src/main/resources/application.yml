@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-creditcard
+  profiles:
+    active:
+      - dev
+  config:
+    import: optional:configserver:http://localhost:9010
+
+  cloud:
+    config:
+      profile: dev
